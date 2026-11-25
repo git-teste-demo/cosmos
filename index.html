@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#080b16">
+  <meta name="description" content="Cosmos — experiência interativa de exploração espacial.">
+  <title>Cosmos — Space Exploration</title>
+  <link rel="stylesheet" href="css/global.css">
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar" id="sidebar">
+      <a class="brand" href="index.html"><span class="brand-mark">✦</span><span>COSMOS<small>SPACE EXPLORATION</small></span></a>
+      <div class="nav-label">EXPLORAÇÃO</div>
+      <nav class="nav">
+        <a class="nav-link active" href="#overview"><span>⌂</span> Overview</a>
+        <a class="nav-link" href="#galaxy"><span>◎</span> Galaxy <em>SOON</em></a>
+        <a class="nav-link" href="#planets"><span>◉</span> Planets <em>SOON</em></a>
+        <a class="nav-link" href="#discoveries"><span>✧</span> Discoveries <em>SOON</em></a>
+        <a class="nav-link" href="#missions"><span>⌁</span> Missions <em>SOON</em></a>
+      </nav>
+      <div class="sidebar-bottom">
+        <div class="status"><span class="pulse"></span> SISTEMA OPERACIONAL</div>
+        <div class="version">COSMOS INTERFACE <span>v0.1</span></div>
+      </div>
+    </aside>
+    <main class="main">
+      <header class="topbar">
+        <button class="menu-button" id="menuButton" aria-label="Abrir menu">☰</button>
+        <div class="breadcrumb">COSMOS <span>/</span> OVERVIEW</div>
+        <div class="top-actions"><span class="live-dot"></span><span>EXPLORATION MODE</span><div class="avatar">EX</div></div>
+      </header>
+      <section class="content" id="overview">
+        <div class="welcome">
+          <div><p class="eyebrow">CENTRAL DE EXPLORAÇÃO <span>•</span> 01</p>
+            <h1>O universo está<br><span>à sua espera.</span></h1>
+            <p class="intro">Explore sistemas estelares, descubra novos mundos e registre sua jornada pelo cosmos.</p>
+            <a class="primary-button" href="#solar-system">INICIAR EXPLORAÇÃO <span>↗</span></a>
+          </div>
+          <div class="hero-visual" aria-label="Ilustração de planeta no espaço">
+            <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+            <div class="planet"><div class="planet-shadow"></div><div class="planet-ring"></div></div>
+            <span class="star s1">✦</span><span class="star s2">✧</span><span class="star s3">✦</span><span class="star s4">·</span>
+            <div class="planet-label"><span>OBJETO EM DESTAQUE</span><b>Kepler-186f</b><small>EXOPLANETA • CONCEITO VISUAL</small></div>
+          </div>
+        </div>
+        <div class="section-heading"><div><p class="eyebrow">SEU CENTRO DE CONTROLE</p><h2>Visão geral</h2></div><span class="section-note">DADOS DE EXPLORAÇÃO</span></div>
+        <div class="stats-grid">
+          <article class="stat-card"><div class="stat-top"><span>DESCOBERTAS</span><span class="stat-icon">✧</span></div><strong>00</strong><p>Objetos registrados</p><div class="card-line"><span style="width:12%"></span></div></article>
+          <article class="stat-card"><div class="stat-top"><span>SISTEMAS</span><span class="stat-icon">◎</span></div><strong>01</strong><p>Sistema disponível</p><div class="card-line"><span style="width:24%"></span></div></article>
+          <article class="stat-card"><div class="stat-top"><span>MISSÕES</span><span class="stat-icon">⌁</span></div><strong>00 <small>/ 05</small></strong><p>Missões concluídas</p><div class="card-line"><span style="width:0%"></span></div></article>
+          <article class="stat-card"><div class="stat-top"><span>EXPLORADOR</span><span class="stat-icon">⌖</span></div><strong>01 <small>LVL</small></strong><p>Novato espacial</p><div class="xp-track"><span></span></div><p class="xp-caption">0 / 100 XP</p></article>
+        </div>
+        <div class="lower-grid" id="solar-system">
+          <section class="panel system-panel"><div class="panel-heading"><div><p class="eyebrow">PRIMEIRO DESTINO</p><h2>Sistema Solar</h2></div><span class="pill">DISPONÍVEL</span></div>
+            <div class="solar-art"><div class="sun"></div><div class="planet-orbit o1"><i class="mercury"></i></div><div class="planet-orbit o2"><i class="venus"></i></div><div class="planet-orbit o3"><i class="earth"></i></div><div class="planet-orbit o4"><i class="mars"></i></div><div class="planet-orbit o5"><i class="jupiter"></i></div><div class="planet-orbit o6"><i class="saturn"></i></div></div>
+            <div class="system-footer"><span>8 PLANETAS <b>•</b> 1 ESTRELA</span><button class="text-button" id="exploreButton">EXPLORAR SISTEMA ↗</button></div>
+          </section>
+          <section class="panel missions-panel" id="missions"><div class="panel-heading"><div><p class="eyebrow">OBJETIVOS DISPONÍVEIS</p><h2>Missões iniciais</h2></div><span class="mission-count">03</span></div>
+            <div class="mission"><div class="mission-symbol">◉</div><div><b>Primeiro contato</b><p>Conheça o planeta Terra</p><span>+100 XP</span></div><span class="mission-state">INICIAR</span></div>
+            <div class="mission"><div class="mission-symbol">✧</div><div><b>Planeta vermelho</b><p>Visite Marte</p><span>+150 XP</span></div><span class="mission-state locked">BLOQUEADA</span></div>
+            <div class="mission"><div class="mission-symbol">◎</div><div><b>Gigante gasoso</b><p>Descubra Júpiter</p><span>+200 XP</span></div><span class="mission-state locked">BLOQUEADA</span></div>
+          </section>
+        </div>
+        <footer class="footer"><span>© COSMOS EXPLORATION</span><span>FEITO PARA EXPLORAR O DESCONHECIDO <b>✦</b></span></footer>
+      </section>
+    </main>
+  </div>
+  <div class="toast" id="toast" role="status">Módulo em desenvolvimento — em breve.</div>
+  <script src="js/app.js"></script>
+</body>
+</html>
